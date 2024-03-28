@@ -1,0 +1,99 @@
+
+body{
+    font-family:noto sans;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*ENCABEZADO*/
+
+header{
+    display: flex;
+    justify-content:space-between;
+    background-color:rgb(202, 111, 126) ;
+}
+.title {
+    
+    font-size: 100px;
+    position:relative;
+    color: rgb(244, 222, 222);
+    background-color: rgb(202, 111, 126);
+    align-items: center;
+    justify-content: center;
+    }
+
+.navbar{
+    background-color:rgb(202, 111, 126) ;
+       }
+
+.navbar-brand{
+        color:rgb(244, 222, 222);
+        justify-content: center;
+        justify-items: center;
+       }
+
+ /*CUERPO*/
+main{
+        display: flex;
+        flex-wrap: wrap;
+        background-color:rgba(244, 222, 222, 0.637) ;
+}
+
+.subtitulo{
+    display: flex;
+    display: block;
+    justify-content:center;
+    align-items:center;
+    color: white;
+}
+ 
+/* SECCION DE IMAGENES*/
+
+.seccionropa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    row-gap: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    text-align:left;
+    display: block;
+    color: white;
+    font-size: large;
+    font-weight: 800;
+}
+
+
+.img{
+    width: 400px;
+    height: 600px;
+}     
+
+/*------pie de pagina-----*/
+
+.footer{
+    background-color: rgba(244, 222, 222, 0.637) ;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    justify-items:space-between ;
+    font-size: medium;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+
+
+
+
+
