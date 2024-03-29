@@ -1,35 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./estilos/style.css">
+  <!--fontfamily-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ubicacion</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="../estilos/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>local</h1>
-     <!-- barra de navegacion-->
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./pages/carrito.html">carrito</a>
+  <header>
+    <h1 class="title">LOCAL</h1>
+    <!-- barra de navegacion-->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">MENU PRINCIPAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/local.html">local</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/pantalones.html">pantalones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/vestidos.html">vestidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/polleras.html">polleras</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="cuerpolocal">
+      <iframe class=mapa
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.3762362544403!2d-58.260007824711636!3d-34.72090967291252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32fd5a8567c25%3A0xdcae69d47b18b2d!2s47%20Street%20Quilmes!5e0!3m2!1ses!2sar!4v1711656453187!5m2!1ses!2sar"
+        width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <!--pie de pagina-->
+  <footer>
+    <div class="contacto">
+      <h2>Contacto</h2>
+      <h3>Envianos un mensaje nos interesa saber tu opinion!</h3>
+      <form action="enviar.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
     </div>
-    <div class="container-fluid">
-        <a class="navbar-brand" href="./pages/local.html">local</a>
-      </div>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./pages/cuenta.html">cuenta</a>
-      </div>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./pages/pantalones.html">pantalones</a>
-      </div>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./pages/vestidos.html">vestidos</a>
-      </div>
-  </nav>
-  
-    </header>
-    
-    <section><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104940.03952576227!2d-58.40162845664059!3d-34.7209097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32fd5a8567c25%3A0xdcae69d47b18b2d!2s47%20Street%20Quilmes!5e0!3m2!1ses!2sar!4v1707092105778!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
